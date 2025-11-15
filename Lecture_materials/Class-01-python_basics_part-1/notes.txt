@@ -1,0 +1,52 @@
+How to execute python codes
+----------------------------
+
+1. Using .ipynb files [notebooks] : .ipynb stands for interactive Python Notebook 
+   Notebook format
+   cells
+   - markdown cell: Use it for textual expressions / notes
+   - code cell: Use it for running the codes
+
+   To run .ipynb files
+   - Jupyter notebook
+   - VS code [install ipykernel]
+
+   .ipynb files are usually great for learning and experimentation. You don't use it for production environment.
+   The production environment usually runs python script
+
+2. Using .py file [scripts]
+   - You have to run it from the terminal (cmd prompt / powershell)
+   - $ python xyz.py [$python3 xyz.py]
+
+   These are used for production systems.
+
+
+ Virtual Environment in Python
+ -----------------------------
+
+ - Often you will work on multiple python projects. Each of these projects will have different dependencies. 
+ - project-1 : dependency on NumPy 1.24
+ - project-2 : dependency on NumPy 2.0
+
+ for each of the projects it is better to create a Virtual Environment, which will kind of act like a safe place to execute your codes. 
+ Each virtual env will be isolated from other virtual env, so that the dependicies are intact and do not mess up the execution.
+
+ Virtual environment
+ - preinstalled files
+ - python executer (interpreter)
+ - Install libraries inside VE using "pip install <library name>"
+
+
+ How to create a Virtual Environment
+ -----------------------------------
+
+ $ python -m venv <virtual_env_name>
+
+ Activate the virtual environment
+ --------------------------------
+
+ [windows] 
+ $ <virtual_env_name>\Scripts\activate
+
+ [Mac/Linux]
+ $ source <virtual_env>/bin/activate
