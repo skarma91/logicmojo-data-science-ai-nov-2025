@@ -1,0 +1,29 @@
+{
+  "class": "10-A",
+  "students": [
+    {
+      "id": 1,
+      "name": "Rahul Agarwal",
+      "age": 15,
+      "subjects": ["Math", "Science", "English"],
+      "marks": {
+        "Math": 88,
+        "Science": 92,
+        "English": 85
+      },
+      "is_passed": true
+    },
+    {
+      "id": 2,
+      "name": "Aditi Sharma",
+      "age": 16,
+      "subjects": ["Math", "History", "English"],
+      "marks": {
+        "Math": 78,
+        "History": 80,
+        "English": 90
+      },
+      "is_passed": true
+    }
+  ]
+}

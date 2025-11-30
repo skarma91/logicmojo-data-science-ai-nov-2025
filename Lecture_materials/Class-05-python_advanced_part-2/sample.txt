@@ -1,0 +1,4 @@
+I am Sourav Karmakar
+I am a AIML Scientist.
+I am the instructor of the course.
+Currently we are learning python.

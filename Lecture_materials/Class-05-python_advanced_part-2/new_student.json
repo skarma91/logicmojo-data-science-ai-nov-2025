@@ -1,0 +1,14 @@
+{
+    "id": 3,
+    "name": "Rahul Verma",
+    "age": 15,
+    "subjects": [
+        "Math",
+        "Physics"
+    ],
+    "marks": {
+        "Math": 95,
+        "Physics": 89
+    },
+    "is_passed": true
+}
