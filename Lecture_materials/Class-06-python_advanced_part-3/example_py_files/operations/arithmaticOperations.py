@@ -1,4 +1,4 @@
-from logger_config import logging
+import logging
 
 logger = logging.getLogger(__name__)
 

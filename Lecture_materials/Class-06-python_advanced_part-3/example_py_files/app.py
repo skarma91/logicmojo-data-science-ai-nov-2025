@@ -1,7 +1,9 @@
 # from operations.arithmaticOperations import add, subtract, multiply, divide
 # from operations.stringOperations import countOccurences
 
-from logger_config import logging, set_logger
+import logging
+from logger_config import set_logger
+
 set_logger()
 logger = logging.getLogger(__name__)
 
