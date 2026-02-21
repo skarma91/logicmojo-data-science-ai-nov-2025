@@ -20,7 +20,7 @@ Churning means closing the relationship with the bank. Following are the descrip
 - `vintage`: The duration of the customer's relationship with the company.
 - `age`: Age of the customer.
 - `gender`: Gender of the customer.
-- `dependents: Number of dependents the customer has.
+- `dependents`: Number of dependents the customer has.
 - `occupation`: The occupation of the customer.
 - `city`: City in which the customer is located.
 - `customer_nw_category`: Net worth category of the customer.
