@@ -1,6 +1,6 @@
 # Assignment-7: Exploratory Data Analysis
 
-### Date: 7th February, 2026
+### Date: 21st February, 2026
 
 ### Steps to solve and upload the assignment 
 
@@ -9,7 +9,7 @@
 - Upload the solved notebook in the google drive location: https://drive.google.com/drive/folders/1PaZA6VYSQckNTRZJPgQy4bJ7nl8T4CWv?usp=drive_link
 - Also upload the solved notebook and document to your respective github repository under the folder **Assignment-7**.
 
-<h3><span style="color:red"> Deadline: 28th February, 2026 </span></h3>
+<h3><span style="color:red"> Deadline: 14th March, 2026 </span></h3>
 
 ### Problem Statement:
 
