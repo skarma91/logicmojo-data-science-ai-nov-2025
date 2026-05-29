@@ -16,7 +16,7 @@
     - Moving averages
     - ETS methods
     - ARMA and ARIMA modeling
-
+    - Deep Learning (LSTM) based time series modeling 
 ---
 
 ## Deliverables
@@ -30,7 +30,8 @@
 
 3. **Model Development**  
    - Fit **classical models** (e.g., ARIMA, SARIMA, Exponential Smoothing, Holt-Winters).  
-   - Perform parameter tuning and diagnostics.  
+   - Perform parameter tuning and diagnostics. 
+   - Apply deep learning based (LSTM) based forecasting techniques.
 
 4. **Forecasting**  
    - Generate out-of-sample forecasts with proper train-test split.  
@@ -47,7 +48,7 @@
 - **Problem setup and EDA:** Dataset selection, problem statement definition, initial EDA.  
 - **Preprocessing and decomposition:** Preprocessing, trend/seasonality decomposition, stationarity checks.  
 - **Naive model fitting:** Model fitting (baseline models like Naïve, Moving Average, Exponential Smoothing).  
-- **Advanced Model fitting:** Advanced models (ARIMA, SARIMA, Holt-Winters), diagnostics, and validation.  
+- **Advanced Model fitting:** Advanced models (ARIMA, SARIMA, Holt-Winters), LSTM based models, diagnostics, and validation.  
 - **Forecasting:** Forecast generation, accuracy evaluation, visualization.  
 - **Report Preparation:** Write project report & polish notebook for readability.  
 
@@ -56,5 +57,5 @@
 ## Steps to upload the assignment solution
 
 - Create the notebook `Assignment-11-Time_Series-<your_name>_<your_surname>.ipynb` in your local machine and solve the assignment.
-- Upload the solved notebook and document in the google drive location: https://drive.google.com/drive/folders/1n8b6Xoq_RMQmL7vAlEQzvBTdvsXrcr_s?usp=sharing
+- Upload the solved notebook and document in the google drive location: https://drive.google.com/drive/folders/1hO-c4nn6mPRyzN1MneqHbQt3Bbf2pjq4?usp=sharing
 - Also upload the solved notebook and document to your respective github repository.
