@@ -51,17 +51,17 @@ A realistic prep arc: **foundations (Python, math, stats)** → **classical ML**
 | 9 | Ensemble Methods & Boosting | Classes 34–35 |
 | 10 | Dimensionality Reduction & Unsupervised Learning | Classes 36, 38–39 |
 | 11 | Feature Engineering & Imbalanced Data | Class 37 |
-| 12 | Model Deployment & MLOps | Class 40 |
-| 13 | Deep Learning Foundations | Classes 41–44 |
-| 14 | Computer Vision & CNNs | Classes 45–46 |
-| 15 | NLP Foundations | Classes 47–48 |
-| 16 | Time Series Analysis & Forecasting | Class 49 |
+| 12 | Time Series Analysis & Forecasting | Class 49 |
+| 13 | Model Deployment & MLOps | Class 40 |
+| 14 | Deep Learning Foundations | Classes 41–44 |
+| 15 | Computer Vision & CNNs | Classes 45–46 |
+| 16 | NLP Foundations | Classes 47–48 |
 | 17 | Sequence Models (RNN/LSTM/Attention) | Classes 50–51 |
 | 18 | Transformers & LLMs | Classes 52–53 |
 | 19 | Generative AI: Prompting, RAG & Agents | Classes 54–57 |
-| A | ML & GenAI System Design (cross-cutting) | — |
-| B | SQL, Coding & DSA (cross-cutting) | — |
-| C | Behavioral, Projects & Communication | — |
+| A | ML & GenAI System Design (General Skills) | — |
+| B | SQL, Coding & DSA (General Skills) | — |
+| C | Behavioral, Projects & Communication (General Skills)| — |
 | D | General resource hub & practice platforms | — |
 
 ---
@@ -335,7 +335,29 @@ A realistic prep arc: **foundations (Python, math, stats)** → **classical ML**
 
 ---
 
-## 12. Model Deployment & MLOps
+## 12. Time Series Analysis & Forecasting
+*Course material: Class 49*
+
+**Master these concepts**
+- Components: trend, seasonality, cyclicity, noise; stationarity and how to test/achieve it (differencing).
+- Autocorrelation (ACF/PACF); classical models: AR, MA, **ARIMA/SARIMA**, exponential smoothing.
+- Train/test splitting for time series (no shuffling!), rolling/expanding windows, backtesting.
+- Forecast evaluation (MAE/RMSE/MAPE); leakage specific to temporal data.
+
+**What interviewers probe:** stationarity and why it matters, choosing/interpreting ARIMA terms, and *correct* validation for temporal data.
+
+**Sample interview questions**
+1. **What is stationarity and why does it matter?** — *Signal:* constant mean/variance/autocorrelation over time; assumed by models like ARIMA; achieved via differencing; test with ADF.
+2. **How do you validate a forecasting model?** — *Signal:* never shuffle; use chronological splits and rolling/expanding-window backtests; report MAE/RMSE/MAPE.
+3. **What do p, d, q mean in ARIMA?** — *Signal:* AR order, differencing order, MA order; inferred from PACF/ACF and the differencing needed for stationarity.
+
+**Core resources**
+- [*Forecasting: Principles and Practice* (Hyndman & Athanasopoulos)](https://otexts.com/fpp3/) — the free, authoritative forecasting textbook.
+- [StatQuest / time-series tutorials](https://www.youtube.com/@statquest) — for ACF/PACF and ARIMA intuition.
+
+---
+
+## 13. Model Deployment & MLOps
 *Course material: Class 40 (model deployment using Streamlit)*
 
 **Master these concepts**
@@ -360,7 +382,7 @@ A realistic prep arc: **foundations (Python, math, stats)** → **classical ML**
 
 # Part III — Deep Learning
 
-## 13. Deep Learning Foundations
+## 14. Deep Learning Foundations
 *Course material: Classes 41–44 (intro to ANN & PyTorch, training neural networks)*
 
 **Master these concepts**
@@ -387,7 +409,7 @@ A realistic prep arc: **foundations (Python, math, stats)** → **classical ML**
 
 ---
 
-## 14. Computer Vision & CNNs
+## 15. Computer Vision & CNNs
 *Course material: Classes 45 (CNNs), 46 (CNN architectures & transfer learning)*
 
 **Master these concepts**
@@ -412,7 +434,7 @@ A realistic prep arc: **foundations (Python, math, stats)** → **classical ML**
 
 # Part IV — NLP, Transformers & Generative AI
 
-## 15. NLP Foundations
+## 16. NLP Foundations
 *Course material: Classes 47 (basics of NLP), 48 (text vectorization & embeddings)*
 
 **Master these concepts**
@@ -432,28 +454,6 @@ A realistic prep arc: **foundations (Python, math, stats)** → **classical ML**
 - [Stanford CS224n — *NLP with Deep Learning*](https://web.stanford.edu/class/cs224n/) — lectures, notes, and assignments; the standard NLP course.
 - [Jay Alammar — *The Illustrated Word2Vec*](https://jalammar.github.io/illustrated-word2vec/) — the clearest visual explanation of embeddings.
 - [Hugging Face — LLM/NLP Course, early chapters](https://huggingface.co/learn/llm-course) — tokenization and the modern NLP pipeline.
-
----
-
-## 16. Time Series Analysis & Forecasting
-*Course material: Class 49*
-
-**Master these concepts**
-- Components: trend, seasonality, cyclicity, noise; stationarity and how to test/achieve it (differencing).
-- Autocorrelation (ACF/PACF); classical models: AR, MA, **ARIMA/SARIMA**, exponential smoothing.
-- Train/test splitting for time series (no shuffling!), rolling/expanding windows, backtesting.
-- Forecast evaluation (MAE/RMSE/MAPE); leakage specific to temporal data.
-
-**What interviewers probe:** stationarity and why it matters, choosing/interpreting ARIMA terms, and *correct* validation for temporal data.
-
-**Sample interview questions**
-1. **What is stationarity and why does it matter?** — *Signal:* constant mean/variance/autocorrelation over time; assumed by models like ARIMA; achieved via differencing; test with ADF.
-2. **How do you validate a forecasting model?** — *Signal:* never shuffle; use chronological splits and rolling/expanding-window backtests; report MAE/RMSE/MAPE.
-3. **What do p, d, q mean in ARIMA?** — *Signal:* AR order, differencing order, MA order; inferred from PACF/ACF and the differencing needed for stationarity.
-
-**Core resources**
-- [*Forecasting: Principles and Practice* (Hyndman & Athanasopoulos)](https://otexts.com/fpp3/) — the free, authoritative forecasting textbook.
-- [StatQuest / time-series tutorials](https://www.youtube.com/@statquest) — for ACF/PACF and ARIMA intuition.
 
 ---
 
@@ -533,7 +533,9 @@ A realistic prep arc: **foundations (Python, math, stats)** → **classical ML**
 
 ---
 
-# Part V — Cross-Cutting Skills
+# Part V — General Skills
+
+This skills are not tied to a particular topic. These are foundational, topic-independent skills needed across the whole interview process.
 
 ## A. ML & GenAI System Design
 *(Not a single class — synthesizes the whole course; increasingly central for both DS/ML and AI Engineer interviews.)*
